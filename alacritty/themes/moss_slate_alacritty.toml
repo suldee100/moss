@@ -1,0 +1,80 @@
+# Moss Slate — Alacritty theme: dark grey base, subtle green accents
+# Save to: ~/.config/alacritty/themes/moss_slate.toml
+#
+# Then in ~/.config/alacritty/alacritty.toml add:
+#   [general]
+#   import = ["~/.config/alacritty/themes/moss_slate.toml"]
+#
+# (On Alacritty 0.13, use a top-level `import = [...]` instead of [general].)
+
+[colors.primary]
+background = "#222526"
+foreground = "#c8ccca"
+dim_foreground = "#8b9393"
+bright_foreground = "#e2e5e3"
+
+[colors.cursor]
+text = "#1a1c1d"
+cursor = "#8fbf7f"
+
+[colors.vi_mode_cursor]
+text = "#1a1c1d"
+cursor = "#a3cfb0"
+
+[colors.selection]
+text = "CellForeground"
+background = "#35493d"
+
+[colors.search.matches]
+foreground = "#1a1c1d"
+background = "#6b9a62"
+
+[colors.search.focused_match]
+foreground = "#1a1c1d"
+background = "#8fbf7f"
+
+[colors.footer_bar]
+foreground = "#c8ccca"
+background = "#2b2f30"
+
+[colors.hints.start]
+foreground = "#1a1c1d"
+background = "#8fbf7f"
+
+[colors.hints.end]
+foreground = "#1a1c1d"
+background = "#6b9a62"
+
+[colors.line_indicator]
+foreground = "#c8ccca"
+background = "#3a3f40"
+
+[colors.normal]
+black = "#2b2f30"
+red = "#c97070"
+green = "#8fbf7f"
+yellow = "#d1b98a"
+blue = "#7fa6c2"
+magenta = "#a898b8"
+cyan = "#7fb8b2"
+white = "#c8ccca"
+
+[colors.bright]
+black = "#5d6666"
+red = "#d98a8a"
+green = "#a3cfb0"
+yellow = "#e0c9a0"
+blue = "#98bcd4"
+magenta = "#bcaecb"
+cyan = "#99cac4"
+white = "#e2e5e3"
+
+[colors.dim]
+black = "#1a1c1d"
+red = "#a05a5a"
+green = "#6b9a62"
+yellow = "#a8946e"
+blue = "#66859c"
+magenta = "#867a93"
+cyan = "#66938e"
+white = "#8b9393"

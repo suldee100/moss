@@ -1,0 +1,88 @@
+# Moss Slate — dunst config: dark grey base, subtle green accents
+# Save to: ~/.config/dunst/dunstrc
+# Reload:  killall dunst && dunst &   (then test with: notify-send "Moss Slate" "Hello")
+
+[global]
+    ### Display
+    monitor = 0
+    follow = mouse
+    width = (250, 350)
+    height = (0, 200)
+    origin = top-right
+    offset = (20, 52)
+    notification_limit = 5
+    gap_size = 8
+
+    ### Look
+    frame_width = 2
+    corner_radius = 0
+    separator_height = 2
+    separator_color = frame
+    padding = 12
+    horizontal_padding = 14
+    text_icon_padding = 12
+    transparency = 0
+
+    progress_bar = true
+    progress_bar_height = 10
+    progress_bar_frame_width = 1
+    progress_bar_min_width = 150
+    progress_bar_max_width = 300
+    progress_bar_corner_radius = 3
+
+    highlight = "#8fbf7f"
+
+    ### Text
+    font = JetBrainsMono Nerd Font 13
+    markup = full
+    format = "<b>%s</b>\n%b"
+    alignment = left
+    vertical_alignment = center
+    show_age_threshold = 60
+    ellipsize = middle
+    word_wrap = true
+
+    ### Icons
+    icon_position = left
+    min_icon_size = 32
+    max_icon_size = 48
+    icon_position = left
+    min_icon_size = 32
+    max_icon_size = 48
+    enable_recursive_icon_lookup = true
+    icon_theme = Papirus-Dark
+
+    ### Behavior
+    sort = yes
+    idle_threshold = 120
+    stack_duplicates = true
+    hide_duplicate_count = false
+    show_indicators = yes
+    sticky_history = yes
+    history_length = 20
+
+    ### Mouse
+    mouse_left_click = close_current
+    mouse_middle_click = do_action, close_current
+    mouse_right_click = close_all
+
+# ---------- Urgency ----------
+
+[urgency_low]
+    background = "#222526"
+    foreground = "#8b9393"
+    frame_color = "#3a3f40"
+    timeout = 6
+
+[urgency_normal]
+    background = "#222526"
+    foreground = "#c8ccca"
+    frame_color = "#6b9a62"
+    timeout = 10
+
+[urgency_critical]
+    background = "#2b2f30"
+    foreground = "#e2e5e3"
+    frame_color = "#c97070"
+    highlight = "#c97070"
+    timeout = 0

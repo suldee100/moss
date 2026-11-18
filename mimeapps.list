@@ -1,0 +1,11 @@
+[Default Applications]
+image/*=feh.desktop
+video//*=mpv.desktop
+video/*=mpv.desktop
+audio//*=mpv.desktop
+audio/*=mpv.desktop
+x-scheme-handler/discord-1216669957799018608=discord-1216669957799018608.desktop
+application/x-osu-skin-archive=osu.desktop
+
+[Added Associations]
+application/x-osu-skin-archive=osu.desktop;

@@ -1,0 +1,100 @@
+/* Moss Slate — minimal rofi drun theme: dark grey base, subtle green accents, square corners
+ * Save to: ~/.config/rofi/moss_slate.rasi
+ * Run:     rofi -show drun -theme moss_slate
+ */
+
+* {
+    bg0:       #1a1c1d;
+    bg1:       #222526;
+    bg2:       #2b2f30;
+    bg3:       #3a3f40;
+    fg:        #c8ccca;
+    fg-dim:    #8b9393;
+    comment:   #5d6666;
+    green:     #8fbf7f;
+    green-dim: #6b9a62;
+    mint:      #a3cfb0;
+    sel:       #2c3b33;
+
+    background-color: transparent;
+    text-color:       @fg;
+    font:             "JetBrainsMono Nerd Font 11";
+}
+
+configuration {
+    modi:                "drun";
+    show-icons:          true;
+    icon-theme:          "Papirus-Dark";
+    drun-display-format: "{name}";
+}
+
+window {
+    location:         center;
+    width:            480px;
+    background-color: @bg1;
+    border:           2px;
+    border-color:     @green-dim;
+    border-radius:    0px;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    spacing:  0px;
+    padding:  0px;
+}
+
+inputbar {
+    children:         [ prompt, entry ];
+    background-color: @bg0;
+    padding:          12px 14px;
+    spacing:          10px;
+}
+
+prompt {
+    text-color: @green;
+    str:        "❯";
+}
+
+entry {
+    placeholder:       "Search";
+    placeholder-color: @comment;
+    text-color:        @fg;
+    cursor-color:      @green;
+}
+
+listview {
+    columns:      1;
+    lines:        8;
+    fixed-height: true;
+    scrollbar:    false;
+    padding:      6px;
+    spacing:      2px;
+}
+
+element {
+    padding:       8px 10px;
+    spacing:       12px;
+    border-radius: 0px;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: transparent;
+    text-color:       @fg;
+}
+
+element selected.normal {
+    background-color: @sel;
+    text-color:       @green;
+}
+
+element-icon {
+    size:             24px;
+    background-color: transparent;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+    vertical-align:   0.5;
+}

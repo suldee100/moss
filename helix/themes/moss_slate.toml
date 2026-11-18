@@ -1,0 +1,156 @@
+# Moss Slate — a Helix theme: dark grey base, subtle green accents
+# Install: save to ~/.config/helix/themes/moss_slate.toml
+# Enable:  theme = "moss_slate"   (in ~/.config/helix/config.toml)
+
+# ---------- Syntax ----------
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "fg_dim", modifiers = ["italic"] }
+
+"keyword" = { fg = "green" }
+"keyword.control" = { fg = "green" }
+"keyword.control.import" = { fg = "green_dim" }
+"keyword.directive" = { fg = "green_dim" }
+"keyword.function" = { fg = "green" }
+"keyword.operator" = { fg = "green_dim" }
+"keyword.storage" = { fg = "green" }
+
+"function" = { fg = "blue" }
+"function.macro" = { fg = "mint" }
+"function.builtin" = { fg = "blue" }
+"function.special" = { fg = "mint" }
+
+"type" = { fg = "yellow" }
+"type.builtin" = { fg = "yellow" }
+"type.enum.variant" = { fg = "orange" }
+"constructor" = { fg = "yellow" }
+
+"string" = { fg = "mint" }
+"string.regexp" = { fg = "cyan" }
+"string.special" = { fg = "cyan" }
+"constant" = { fg = "orange" }
+"constant.numeric" = { fg = "orange" }
+"constant.builtin" = { fg = "orange" }
+"constant.character.escape" = { fg = "cyan" }
+
+"variable" = { fg = "fg" }
+"variable.builtin" = { fg = "purple" }
+"variable.parameter" = { fg = "fg" , modifiers = ["italic"] }
+"variable.other.member" = { fg = "fg" }
+
+"attribute" = { fg = "purple" }
+"label" = { fg = "purple" }
+"namespace" = { fg = "cyan" }
+"operator" = { fg = "fg_dim" }
+"punctuation" = { fg = "fg_dim" }
+"punctuation.delimiter" = { fg = "fg_dim" }
+"punctuation.bracket" = { fg = "fg_dim" }
+"special" = { fg = "cyan" }
+"tag" = { fg = "green" }
+
+# ---------- Markup ----------
+"markup.heading" = { fg = "green", modifiers = ["bold"] }
+"markup.heading.marker" = { fg = "green_dim" }
+"markup.list" = { fg = "green_dim" }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "blue", modifiers = ["underlined"] }
+"markup.link.text" = { fg = "mint" }
+"markup.link.label" = { fg = "mint" }
+"markup.quote" = { fg = "fg_dim", modifiers = ["italic"] }
+"markup.raw" = { fg = "mint" }
+
+# ---------- Diff ----------
+"diff.plus" = { fg = "green" }
+"diff.minus" = { fg = "red" }
+"diff.delta" = { fg = "yellow" }
+"diff.delta.moved" = { fg = "blue" }
+
+# ---------- UI ----------
+"ui.background" = { bg = "bg1" }
+"ui.text" = { fg = "fg" }
+"ui.text.focus" = { fg = "fg", bg = "bg3" }
+"ui.text.inactive" = { fg = "comment" }
+"ui.text.directory" = { fg = "green_dim" }
+
+"ui.cursor" = { fg = "bg0", bg = "green" }
+"ui.cursor.primary" = { fg = "bg0", bg = "green" }
+"ui.cursor.match" = { fg = "green", bg = "sel_green", modifiers = ["bold"] }
+"ui.cursor.insert" = { fg = "bg0", bg = "mint" }
+"ui.cursor.select" = { fg = "bg0", bg = "yellow" }
+
+"ui.selection" = { bg = "sel_green" }
+"ui.selection.primary" = { bg = "sel_green_hi" }
+"ui.cursorline.primary" = { bg = "bg2" }
+"ui.cursorline.secondary" = { bg = "bg2" }
+"ui.cursorcolumn.primary" = { bg = "bg2" }
+
+"ui.linenr" = { fg = "comment" }
+"ui.linenr.selected" = { fg = "green" }
+"ui.gutter" = { bg = "bg1" }
+"ui.gutter.selected" = { bg = "bg2" }
+
+"ui.virtual.whitespace" = { fg = "bg3" }
+"ui.virtual.ruler" = { bg = "bg2" }
+"ui.virtual.indent-guide" = { fg = "bg3" }
+"ui.virtual.inlay-hint" = { fg = "comment" }
+"ui.virtual.jump-label" = { fg = "green", modifiers = ["bold"] }
+"ui.highlight" = { bg = "bg3" }
+
+"ui.statusline" = { fg = "fg", bg = "bg0" }
+"ui.statusline.inactive" = { fg = "comment", bg = "bg0" }
+"ui.statusline.normal" = { fg = "bg0", bg = "green", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg0", bg = "mint", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg0", bg = "yellow", modifiers = ["bold"] }
+"ui.statusline.separator" = { fg = "bg3" }
+
+"ui.bufferline" = { fg = "fg_dim", bg = "bg0" }
+"ui.bufferline.active" = { fg = "green", bg = "bg1", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "bg0" }
+
+"ui.popup" = { fg = "fg", bg = "bg2" }
+"ui.popup.info" = { fg = "fg", bg = "bg2" }
+"ui.window" = { fg = "bg3" }
+"ui.help" = { fg = "fg", bg = "bg2" }
+"ui.menu" = { fg = "fg", bg = "bg2" }
+"ui.menu.selected" = { fg = "green", bg = "bg3" }
+"ui.menu.scroll" = { fg = "green_dim", bg = "bg2" }
+
+# ---------- Diagnostics ----------
+"error" = { fg = "red" }
+"warning" = { fg = "yellow" }
+"info" = { fg = "blue" }
+"hint" = { fg = "green_dim" }
+
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
+"diagnostic.info" = { underline = { color = "blue", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "green_dim", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# ---------- Palette ----------
+[palette]
+# Greys (base)
+bg0 = "#1a1c1d"
+bg1 = "#222526"
+bg2 = "#2b2f30"
+bg3 = "#3a3f40"
+comment = "#5d6666"
+fg_dim = "#8b9393"
+fg = "#c8ccca"
+
+# Greens (accent)
+green = "#8fbf7f"
+green_dim = "#6b9a62"
+mint = "#a3cfb0"
+sel_green = "#2c3b33"
+sel_green_hi = "#35493d"
+
+# Supporting (muted)
+yellow = "#d1b98a"
+orange = "#d19a6a"
+red = "#c97070"
+blue = "#7fa6c2"
+cyan = "#7fb8b2"
+purple = "#a898b8"
